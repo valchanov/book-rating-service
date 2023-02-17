@@ -7,5 +7,5 @@ import reactor.core.publisher.Mono;
 
 @Repository
 public interface RatingRepository extends R2dbcRepository<Rating, Long> {
-    Mono<Rating> findByBookId(Long bookId);
+    Mono<Rating> findByBookid(Long bookId);
 }

@@ -13,7 +13,7 @@ public class RatingService {
     private final RatingRepository ratingRepository;
 
     public Mono<Rating> findByBookId(Long bookId) {
-        return ratingRepository.findByBookId(bookId);
+        return ratingRepository.findByBookid(bookId);
     }
 
     public Flux<Rating> getAll() {
